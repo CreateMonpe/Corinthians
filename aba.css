@@ -1,0 +1,16 @@
+.historia .container{
+    width: 100%;
+}
+
+
+.historia .container .lateral{
+    width: 300px;
+    height: 1000px;
+    background-color: rgba(143, 136, 136, 0.599);
+}
+
+.navBar3 {
+   flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
