@@ -8,21 +8,45 @@
 
 #origemT{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    gap: 28px;
 }
 
-#pOrigem {
-    width: 700px;
-    margin-left: 60px;
-    text-align: justify;
+#p1Origem {
+    width: 650px;
+    margin-left: 30px;
+    text-align: justify;        
+    margin-top: 25px;
 }
+#p2Origem{
+margin-left: 70px;
+margin-top: -10px;
+padding-left: 0 40px;
+}
+
+.origem {
+    display: flex;
+    flex-direction: column;
+}
+
 #h1Origem {
-    justify-content: center;
-    margin-left: 600px;
+    align-self: center;
 }
  #imgOrigem{
     width: 500px;
-    margin-left: 150px;
+    margin-right: 80px;
+    margin-top: 25px;
+    height: 250px;
+
+ }
+ #imgOrigem2{
+    width: 500px;
+ }
+ #OrigemI2{
+    justify-content: center;
+    align-items: center;
+    display: flex;
  }
     
 /* fim origem */
