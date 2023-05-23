@@ -1,0 +1,77 @@
+#idolosDiv {
+  margin-top: 100px;
+}
+
+.jogador {
+  display: flex;
+  border: 1px solid #000;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 40px;
+}
+
+.foto {
+  margin-right: 20px;
+}
+
+.foto img {
+  width: 130px;
+  height: 130px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.info h3,
+.info p {
+  margin: 0;
+}
+
+.historia .container{
+  width: 100%;
+  display: flex;
+}
+
+.navBar3 a{
+ text-decoration: none;
+ color: black;
+ font-size: smaller;
+ margin-left: -5px;
+}
+
+.navBar3 a:hover{
+  text-decoration: none;
+  color: rgb(98, 2, 2);
+  font-size: smaller;
+  margin-left: -5px;
+ }
+
+.historia .container .lateral{
+  width: 600px;
+  height: 1250px;
+  background-color: rgba(143, 136, 136, 0.599);
+  border-right: 3px solid black;
+  margin-top: 70px;
+}
+
+.navBar3 {
+ flex-direction: column;
+  justify-content: center;
+  display: flex;
+  margin-top: 70px;
+  font-size: 20px;
+  list-style: none;
+  position: fixed;
+  
+
+}
+
+
+
+
+

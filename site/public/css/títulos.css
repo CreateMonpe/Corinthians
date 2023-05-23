@@ -1,0 +1,35 @@
+.historia .container{
+    width: 100%;
+    display: flex;
+}
+
+.navBar3 a{
+   text-decoration: none;
+   color: black;
+   font-size: smaller;
+   margin-left: -5px;
+}
+
+.historia .container .lateral{
+    width: 202px;
+    height: 1800px;
+    background-color: rgba(143, 136, 136, 0.599);
+    border-right: 3px solid black;
+    
+}
+
+.navBar3 {
+   flex-direction: column;
+    justify-content: center;
+    display: flex;
+    margin-top: 70px;
+    font-size: 20px;
+    list-style: none;
+    position: fixed;
+}
+.navBar3 a:hover{
+    text-decoration: none;
+    color: rgb(98, 2, 2);
+    font-size: smaller;
+    margin-left: -5px;
+   }

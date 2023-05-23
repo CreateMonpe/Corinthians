@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <link rel="stylesheet" href="css/janela.css">
+    <link rel="stylesheet" href="css/sobreMim.css">
+    <link rel="icon" href="assets/imgs/logo corinthians.jpg">
+</head>
+
+<body onload="validarSessao(), atualizacaoPeriodica()">
+
+    <div class="janela">
+
+
+        <div class="header-left dash-header">
+
+            <h1>Corinthians</h1>
+
+            <div class="hello">
+                <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+            </div>
+
+            <div class="btn-nav">
+                <a href="SobreMim.html"></a>
+                <h3>Sobre mim</h3>
+            </div>
+
+            <div class="btn-nav-white">
+                <a href="graficos.html">
+                    <h3>Gráficos</h3>
+                </a>
+            </div>
+
+            <div class="btn-nav-white">
+                <a href="quiz.html">
+                    <h3>Quiz</h3>
+                </a>
+            </div>
+
+            <div class="btn-logout" onclick="limparSessao()">
+                <h3>Sair</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sobreMim">
+        <div class="container">
+            <h3 id="h3Sobre">Porque Corinthians?</h3>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

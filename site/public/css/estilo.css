@@ -1,0 +1,353 @@
+* {
+    font-family: Arial;
+    
+}
+
+body {
+    margin: 0;
+    
+        background-color: #ffffff;
+    }
+
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+/* Começo do header */
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-bottom: solid #000000 3px;
+    display: flex;
+    position: fixed;
+}
+
+.logo {
+    width: 150px;
+    height: 100px;
+}
+
+.header .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.navBar {
+    width: 400px;
+    display: flex;
+    color: #e90000;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navBar2 {
+    width: 400px;
+    display: flex;
+    color: #e90000;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.header a {
+    text-decoration: none;
+    color: #000000;
+    font-size: medium;
+}
+
+/* fim do header */
+
+/* Começo do banner */
+
+.banner {
+    background-image: url(../assets/imgs/arena\ corinthians.jpg);
+    background-position: 100% 100%;
+    background-size: cover;
+    width: 100%;
+    height: 620px;
+}
+
+.banner .container {
+    justify-content: flex-end;
+    align-items: end;
+    flex-direction: column;
+    height: 605px;
+}
+
+
+
+.btn_banner {
+    border: 0px;
+    border-radius: 20px;
+    background-color: #8d8d8da1;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    box-shadow: 2px 2px 2px 1px rgb(24, 7, 2);
+
+}
+
+.btn_banner:hover {
+   
+    background-color: #343434;
+    width: 200px;
+    height: 55px;
+    font-size: 30px;
+    border-radius: 30px;
+}
+
+.btn_banner a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* fim do banner */
+
+/* Começo do Social */
+
+
+
+.card1 img {
+    margin-top: 25px;
+    width: 150px;
+    height: 120px;
+    border-radius: 10%;
+}
+.card2 img {
+    
+    margin-top: 25px;
+    width: 200px;
+    height: 120px;
+    border-radius: 10%;
+}
+.card3 img {
+    
+    margin-top: 25px;
+    width: 150px;
+    height: 120px;
+    border-radius: 10%;
+}
+
+
+
+
+.social .container {
+    justify-content: space-evenly;
+    background-color: rgb(244, 242, 242);
+    display: flex;
+    width: 100%;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+.card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+.card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.card1 h4 {
+    color: #d7424d;
+}
+.card2 h4 {
+    color: #d7424d;
+}
+
+.card3 h4 {
+    color: #d7424d;
+}
+
+.card1 p {
+    width: 150px;
+    text-align: center;
+}
+.card2 p {
+    width: 150px;
+    text-align: center;
+}
+
+.card3 p {
+    width: 150px;
+    text-align: center;
+}
+/* fim do Social */
+
+/* Começo do Sobre Nós */
+
+.SobreNos {
+    background-color: #fffafac9;
+    display: flex;
+    position: relative;
+}
+
+.cardSN {
+    width: 600px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    justify-content: center space-between;
+}
+
+.cardSN img {
+    display: flex;
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.container .cardSN h1 {
+    font-size: 55px;
+    display: flex;
+    justify-content: flex-start;
+    width: 470px;
+}
+
+
+
+.container .cardSN p {
+    width: 500px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* Fim do Sobre Nós */
+/* Inicio Rodapé */
+.rodape .container .background {
+    background-image: url(../assets/imgs/estadio.jpg);
+    background-position: 100% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.rodape .container
+{   
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.rodape .container .emailComercial{
+    display: flex;
+    background-color: #000000cf;
+    width: 800px;
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 30px;
+    flex-direction: column;
+    color: white;
+}
+
+.rodape .container .emailComercial input{
+    width: 500px;
+    height: 50px;
+    border: 0;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.rodape .container .emailComercial button{
+    width: 200px;
+    height: 60px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.38);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.407);
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#botao_cadastre-se{
+    text-transform: uppercase;
+    background: rgb(86, 93, 99);
+    color: #ffffff;
+    letter-spacing: 3px;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px;
+    
+}
+
+
+.rodape .container .emailComercial button:hover{
+    width: 215px;
+    height: 50px;
+    background-color: rgba(187, 169, 182, 0.256);
+
+}
+.rodape .container .informacoes{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    width: 70%;
+}
+.RedesSociais, .Servicos, .Contato{
+    width: 250px;
+    
+}
+
+.rodape .container .imgRodape{
+    margin-top: 22px;
+    width: 225px;
+    height: 70px;
+}
+.rodape .container .iconeRedesocial{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+
+a p{
+    text-decoration: none;
+    color: black;
+}
+/* Fim Rodapé */
+
+
+
+
+#Aqui{
+    font-weight: bold;
+    font-size: 20px;
+    color:#1e1d1f;
+}
+
+    li:hover{
+        font-weight: bold;
+    }
+        

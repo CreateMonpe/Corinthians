@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jogo de Futebol</title>
+    <style>
+        #campo {
+            width: 500px;
+            height: 300px;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        #gol {
+            width: 100px;
+            height: 60px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #goleiro {
+            width: 40px;
+            height: 60px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #bola {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogo de Futebol</h1>
+    <p>Marque um gol selecionando a opção desejada:</p>
+    <button onclick="chutar(1)">Canto Inferior Esquerdo</button>
+    <button onclick="chutar(2)">Canto Superior Esquerdo</button>
+    <button onclick="chutar(3)">Canto Superior Direito</button>
+    <button onclick="chutar(4)">Canto Inferior Direito</button>
+    <button onclick="chutar(5)">Meio</button>
+    <div id="campo">
+        <div id="gol">
+            <div id="goleiro"></div>
+        </div>
+        <div id="bola"></div>
+    </div>
+
+    <script>
+        var pontos = 0;
+        var bola = document.getElementById('bola');
+        var goleiro = document.getElementById('goleiro');
+        var campoWidth = document.getElementById('campo').offsetWidth;
+        var golWidth = document.getElementById('gol').offsetWidth;
+        var goleiroWidth = goleiro.offsetWidth;
+
+        function chutar(opcao) {
+            var goleiroPosicoes = [20, 130, 250, 370, 480];
+            var goleiroPosicao = goleiroPosicoes[Math.floor(Math.random() * goleiroPosicoes.length)];
+
+            var bolaPosicao;
+
+            switch (opcao) {
+                case 1:
+                    bolaPosicao = (golWidth / 2) - (bola.offsetWidth / 2) - (campoWidth / 4);
+                    break;
+                case 2:
+                    bolaPosicao = (golWidth / 2) - (bola.offsetWidth / 2) - (campoWidth / 4);
+                    break;
+                case 3:
+                    bolaPosicao = (golWidth / 2) - (bola.offsetWidth / 2) + (campoWidth / 4);
+                    break;
+                case 4:
+                    bolaPosicao = (golWidth / 2) - (bola.offsetWidth / 2) + (campoWidth / 4);
+                    break;
+                case 5:
+                    bolaPosicao = (golWidth / 2) - (bola.offsetWidth / 2);
+                    break;
+                default:
+                    bolaPosicao = (golWidth / 2) - (bola.offsetWidth / 2);
+                    break;
+            }
+
+            var chuteInterval = setInterval(function () {
+                var bolaBottom = parseInt(window.getComputedStyle(bola).getPropertyValue("bottom"));
+                var bolaLeft = parseInt(window.getComputedStyle(bola).getPropertyValue("left"));
+
+                if (bolaBottom > 80 && bolaBottom < 140 && bolaLeft >= goleiroPosicao && bolaLeft <= goleiroPosicao + goleiroWidth) {
+                    clearInterval(chuteInterval);
+                    alert("Defesa!");
+                    pontos = 0;
+                }
+
+                if (bolaBottom >= 260) {
+                    clearInterval(chuteInterval);
+                    alert("Gol!");
+                    pontos++;
+                }
+
+                bola.style.bottom = bolaBottom + 5 + 'px';
+                bola.style.left = bolaPosicao + 'px';
+            }, 10);
+        }
+    </script>
+</body>
+</html>

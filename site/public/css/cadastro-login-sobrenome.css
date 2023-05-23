@@ -1,0 +1,212 @@
+
+.Cadastro .container{
+    
+    background-color: rgba(227, 225, 225, 0.785);
+    width: 500px;
+    height: 470px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    box-shadow: 0px 10px 40px rgba(100, 99, 99, 0.76);
+    margin-top: 40px;
+    margin-left: 470px;
+    margin-bottom: 40px;
+    
+}
+
+.Cadastro .container .cardCadastro button:hover{
+    background-color: #463d54;
+    width: 100%;
+}
+
+
+.Cadastro .container .cardCadastro button{
+   width: 100%;
+   padding: 16px 0px;
+   margin: 25px;
+   border: none;
+   border-radius: 8px;
+   outline: none;
+   font-weight: 700;
+   text-transform: uppercase;
+   background: slategray;
+   color: #ffffff;
+   letter-spacing: 3px;
+   cursor: pointer;
+   box-shadow: 0px 10px 40px -12px;
+   margin-left: 0px;
+}
+
+input{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+    color: black;
+    font-size: 15px;
+    box-shadow: 0px 10px 40px #00000056;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 15px;
+    font-family: Arial;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    background-color: rgba(154, 106, 89, 0.63);
+    color: white;
+    border-radius: 20px;
+    border: 0 ;
+    margin-top: 50px;
+}
+
+/* Login */
+
+
+
+.Login .container{
+    background-color: rgba(227, 225, 225, 0.785);
+    width: 500px;
+    height: 270px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    box-shadow: 0px 10px 40px rgba(100, 99, 99, 0.76);
+    margin-top: 40px;
+    margin-left: 470px;
+    margin-bottom: 40px;
+}
+
+
+.Login .container .cardLogin button:hover{
+    background-color: #463d54;
+    width: 100%;
+}
+
+.Login .container .cardLogin button{
+    width: 100%;
+   padding: 16px 0px;
+   margin: 25px;
+   border: none;
+   border-radius: 8px;
+   outline: none;
+   font-weight: 700;
+   text-transform: uppercase;
+   background: slategray;
+   color: #ffffff;
+   letter-spacing: 3px;
+   cursor: pointer;
+   box-shadow: 0px 10px 40px -12px;
+   margin-left: 0px;
+}
+
+.backgroundLOGIN{
+    width: 300px;
+    height: 500px;
+}
+
+/* Inicio Rodapé */
+
+.rodape .container
+{   
+    background-color: rgb(197, 195, 195);
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.rodape .container .emailComercial{
+    display: flex;
+    background-color: #000000cf;
+    width: 800px;
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 30px;
+    flex-direction: column;
+    color: white;
+}
+
+.rodape .container .emailComercial input{
+    width: 500px;
+    height: 50px;
+    border: 0;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.rodape .container .emailComercial button{
+    width: 200px;
+    height: 60px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.38);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.407);
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+
+.rodape .container .emailComercial button:hover{
+    width: 215px;
+    height: 50px;
+    background-color: rgba(187, 169, 182, 0.256);
+
+}
+.rodape .container .informacoes{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    width: 70%;
+}
+.RedesSociais, .Servicos, .Contato{
+    width: 250px;
+    
+}
+
+.rodape .container .imgRodape{
+    margin-top: 22px;
+    width: 225px;
+    height: 70px;
+}
+.rodape .container .iconeRedesocial{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+
+a p{
+    text-decoration: none;
+    color: black;
+}
+/* Fim Rodapé */
+
+
+
+
+
