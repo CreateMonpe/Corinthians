@@ -1,0 +1,97 @@
+#gol {
+width: 850px;
+height: 700px;
+background-image: url(../assets/imgs/golReal.jpg);
+background-size: cover;
+}
+
+#goleiro{
+    height: 300px;
+    position: absolute;
+    top: 38vh;
+    left: 41vh;
+    
+}
+
+#bola{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 43vh;
+    left: 27vh;
+}
+
+/* Após o clique */
+
+#bola0{    
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 32vh;
+    left: 3vh;
+}
+#bola1{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 32vh;
+    left: 27vh;
+}
+#bola2{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 32vh;
+    left: 51vh;
+}
+
+
+/* Defesa esquerda */
+#goleiro10{
+    position: absolute;
+    height: 300px;
+    top: 38vh;
+    left: -5vh
+}
+#bola10{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 18.2vh;
+    left: 5.7vh;
+}
+
+/* Defesa meio */
+
+#goleiro11{
+    position: absolute;
+    height: 300px;
+    top: 38vh;
+    left: 41vh;
+}
+#bola11{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 130px;
+    left: 28.6vh;
+    
+}
+
+/* Defesa */
+
+#goleiro12{
+    height: 300px;
+    position: absolute;
+    top: 38vh;
+    left: 86vh;
+}
+#bola12{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 51.2vh;
+    top: 18.4vh;
+}
+
+

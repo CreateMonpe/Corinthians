@@ -1,0 +1,61 @@
+    .container{
+    width: 100%;
+    display: flex;
+    
+  }
+
+  .div_sobreMim{
+    margin-left: 221px;
+  }
+
+  .navBar3 h1{
+    color: red;
+    margin-bottom: 80px;
+  }
+
+  .navBar3 a{
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   font-size: 20px;
+   
+  }
+  
+  .navBar3 a:hover{
+    text-decoration: none;
+    color: rgb(98, 2, 2);
+    font-size: 21px;
+   }
+
+   .navBar3 button{
+    background-color: rgb(223, 32, 32);
+    border-radius: 10px;
+   }
+
+/*    
+   .botaoSair{
+    background-color: rgb(223, 32, 32);
+    border-radius: 10px;
+   }
+   .botaoSair:hovar{
+    text-decoration: none;
+    color: rgb(98, 2, 2);
+    font-size: 21px;
+   } */
+  
+   .container .lateral{
+    width: 220px;
+    height: 720px;
+    background-color: rgb(0, 0, 0);
+    border-right: 3px solid rgb(255, 0, 0);
+   position: fixed; 
+  }
+  
+
+  .navBar3 {
+   flex-direction: column;
+    align-items: center;
+    padding: 80px 20px;
+    display: flex;
+    list-style: none;
+    position: fixed;
+  }

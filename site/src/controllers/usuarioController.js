@@ -43,6 +43,7 @@ function entrar(req, res) {
                     if (resultado.length == 1) {
                         console.log(resultado);
                         res.json(resultado[0]);
+                        sessionStorage['usuarioLogado'] = email
                     } else if (resultado.length == 0) {
                         res.status(403).send("Email e/ou senha inválido(s)");
                     } else {
@@ -94,9 +95,37 @@ function cadastrar(req, res) {
     }
 }
 
+function controllerNovoChute(req, res) {
+    // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
+    var ladoBola = req.body.ladoBola;
+    var ladoGoleiro = req.body.ladoGoleiro;
+    var resultado = req.body.resultado;
+    var usuario = req.body.usuario;
+        
+        // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
+        usuarioModel.dbNovoChute(ladoBola, ladoGoleiro, resultado, usuario)
+            .then(
+                function (resultado) {
+                    res.json(resultado);
+                }
+            ).catch(
+                function (erro) {
+                    console.log(erro);
+                    console.log(
+                        "\nHouve um erro ao realizar um novo Chute! Erro: ",
+                        erro.sqlMessage
+                    );
+                    res.status(500).json(erro.sqlMessage);
+                }
+            );
+    }
+
+
+
 module.exports = {
     entrar,
     cadastrar,
     listar,
-    testar
+    testar,
+    controllerNovoChute
 }

@@ -23,7 +23,7 @@ body {
     background-color: white;
     border-bottom: solid #000000 3px;
     display: flex;
-    position: fixed;
+    /* position: fixed; */
 }
 
 .logo {
@@ -218,7 +218,7 @@ body {
 .container .cardSN h1 {
     font-size: 55px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     width: 470px;
 }
 

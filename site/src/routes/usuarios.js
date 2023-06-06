@@ -20,4 +20,9 @@ router.post("/autenticar", function (req, res) {
     usuarioController.entrar(req, res);
 });
 
+router.post("/chute", function (req, res) {
+    console.log('estou no usuarios.js router.post/chute')
+    usuarioController.controllerNovoChute(req, res);
+});
+
 module.exports = router;

@@ -1,37 +1,105 @@
-.Sobre .container {
+.sobreMim .container{
     width: 100%;
-}
-
-#sobreT {
-    justify-content: space-between;
     display: flex;
+    
+  }
 
-}
+  .div_sobreMim{
+    margin-left: 221px;
+  }
 
-#div_texto_sobre {
-    width: 700px;
-    height: 380px;
-    background-color: rgb(212, 210, 214);
-    margin-left: 40px;
-    border-radius: 20px 0px 0px 20px;
+  .navBar3 h1{
+    color: rgb(0, 0, 0);
+    margin-bottom: 80px;
+  }
 
-}
+  .navBar3 a{
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   font-size: 20px;
+   
+  }
+  
+  .navBar3 a:hover{
+    text-decoration: none;
+    color: rgb(1, 1, 1);
+    font-size: 21px;
+   }
 
-#p1Sobre {
-    width: 650px;
-    margin-left: 30px;
-    text-align: justify;
-    margin-top: 25px;
-}
+   .navBar3 button{
+    background-color: rgb(72, 71, 71);
+    border-radius: 10px;
+    box-shadow: 10px rgba(0, 0, 0, 0.463);
+   }
+  
+  .sobreMim .container .lateral{
+    width: 220px;
+    height: 720px;
+    background-color: rgb(255, 255, 255);
+    border-right: 3px solid rgb(0, 0, 0);
+   position: fixed; 
+  }
+  
 
-
-.Sobre {
-    display: flex;
-    flex-direction: column;
-}
-
-#h1Sobre {
-    display: flex;
+  .navBar3 {
+   flex-direction: column;
     align-items: center;
-    margin-left: 45px;
+    padding: 80px 20px;
+    display: flex;
+    list-style: none;
+    position: fixed;
+  }
+
+
+#comecoSobreMim{
+    /* background-color: rgba(255, 255, 255, 0.305);    */
+    height: 200px;
+    width: 600px;
+    margin-top: 30px;    
+    margin-left: 30px;
+
 }
+
+#significado{
+    /* background-color: aqua; */
+    width: 1180px;
+    height: 370px;
+margin-left: 30px;
+border-radius: 10px;
+
+    
+}
+
+#pComeco{
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+#pSignificado{
+    font-size: 20px;
+    text-align: justify
+}
+
+  .container #h1SobreMim {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(149, 149, 155)  ;
+    width: 1260px;
+    height: 100px;
+  }
+
+  #imgComecoDiv{
+    margin-left: 680px;
+    position: absolute;
+    bottom: 24vh;
+    
+  }
+
+  #imgComeco{
+    width: 500px;
+    height: 400px;
+    
+  }

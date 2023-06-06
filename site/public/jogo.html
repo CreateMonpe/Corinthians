@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+    <link rel="stylesheet" href="css/jogo.css">
+    <link rel="icon" href="assets/imgs/logo corinthians.jpg">
+</head>
+
+<body>
+    Chute no:
+    <select id="chuteGol">
+        <option value="0">Esquerda</option>
+        <option value="1">Meio</option>
+        <option value="2">Direita</option>
+    </select>
+    <button onclick="chutar()">Chutar</button>
+
+    <span id="h2Pontos" style="font-size: 20px;"> </span>
+    <span id="spanGol"></span>
+    <span id="teste"></span>
+
+    <div id="div_jogo">
+        <div id="gol">
+            <div id="div_goleiro">
+                <img id="goleiro" src="assets/imgs/goleiro2.png">
+            </div>
+            <div id="bola"><img id="bola" src="assets/imgs/bolat.png" alt=""></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<script>
+
+    var listaEsquerda = ["Que golaço no cantinho esquerdo do goleiro!", "GOLAÇO NO CANTINHO ESQUERDO!!!", "Golll no canto esquedo."]
+    var listaMeio = ["Golaço de cavadinha no meio", "Gol no meio"]
+    var listaDireita = ["QUE GOLAÇOOOO NO CANTO DIREITO DO GOLEIRO!!!", "Gol no cantinho direito.", "Golll na direita!"]
+    var listaErro = ["ERROUUU", "QUE DEFESA DO GOLEIRO!!!", "Que triste, o goleirão fez uma ótima defesa.", "Defesa do goleiro."]
+    var pontos = 0
+
+
+    function chutar() {
+        var gol = Number(chuteGol.value)
+        var goleiro = parseInt(Math.random() * 3)
+        console.log(goleiro)
+ 
+        var esquerda = parseInt(Math.random() * listaEsquerda.length)
+        var meio = parseInt(Math.random() * listaMeio.length)
+        var direita = parseInt(Math.random() * listaDireita.length)
+        var erro = parseInt(Math.random() * listaMeio.length)
+        var resultado = ""
+
+
+        if (goleiro == gol) {
+            pontos = 0
+             
+            spanGol.innerHTML = `${listaErro[erro]}`
+            if (goleiro == 0) {
+                div_jogo.innerHTML = `
+        <div id="gol">
+            <div id="bola10"><img id="bola10" src="assets/imgs/bolat.png" alt=""></div>    
+        <div id="div_goleiro">
+        <img id="goleiro10" src="assets/imgs/goleiro2.png";">
+        </div> 
+        </div>
+    `
+            } else if (goleiro == 1) {
+                div_jogo.innerHTML = `
+        <div id="gol">
+            <div id="bola11"><img id="bola11" src="assets/imgs/bolat.png" alt=""></div>
+            <div id="div_goleiro11">
+                <img id="goleiro11" src="assets/imgs/goleiro2.png";">
+        </div>
+        </div>
+    `
+            } else if (goleiro == 2) {
+                div_jogo.innerHTML = `
+        <div id="gol">
+            
+            <div id="bola12"><img id="bola12" src="assets/imgs/bolat.png" alt=""></div>
+            <div id="div_goleiro12">
+        <img id="goleiro12" src="assets/imgs/goleiro2.png";">
+        </div>
+        </div>
+    `
+            }
+        } else {
+            console.log(h2Pontos.innerHTML)
+            pontos++
+            if (gol == 0) {
+                spanGol.innerHTML = `${listaEsquerda[esquerda]}`
+                if (goleiro == 1) {
+                    div_jogo.innerHTML = `
+        <div id="gol">
+            <div id="bola0"><img id="bola0" src="assets/imgs/bolat.png" alt=""></div>    
+            <div id="div_goleiro11">   
+        <img id="goleiro11" src="assets/imgs/goleiro2.png">
+        
+        </div>
+        </div>
+    `
+                }
+                else if (goleiro == 2) {
+                    div_jogo.innerHTML = `
+        <div id="gol">
+            <div id="bola0"><img id="bola0" src="assets/imgs/bolat.png" alt=""></div>    
+            <div id="div_goleiro12">   
+        <img id="goleiro12" src="assets/imgs/goleiro2.png">
+        
+        </div>
+        </div>
+    `
+                }
+            } else if (gol == 1) {
+                spanGol.innerHTML = `${listaMeio[meio]}`
+                if (goleiro == 0) {
+                    div_jogo.innerHTML = `
+        <div id="gol">
+            <div id="bola1"><img id="bola1" src="assets/imgs/bolat.png" alt=""></div> 
+            <div id="div_goleiro10">
+        <img id="goleiro10" src="assets/imgs/goleiro2.png">
+        </div>
+    </div>
+    `
+                } else if (goleiro == 2) {
+                    div_jogo.innerHTML = `
+        <div id="gol">
+            <div id="bola1"><img id="bola1" src="assets/imgs/bolat.png" alt=""></div> 
+            <div id="div_goleiro12">
+        <img id="goleiro12" src="assets/imgs/goleiro2.png">
+        </div>
+    </div>
+    `
+                }
+            } else if (gol == 2) {
+                spanGol.innerHTML = `${listaDireita[direita]}`
+                if (goleiro == 0) {
+                    div_jogo.innerHTML = `
+        <div id="gol">
+            <div id="bola2"><img id="bola2" src="assets/imgs/bolat.png" alt=""></div>
+            <div id="div_goleiro10">
+        <img id="goleiro10" src="assets/imgs/goleiro2.png">
+        </div>
+    </div>        
+    `
+                } else if (goleiro == 1) {
+                    div_jogo.innerHTML = `
+        <div id="gol">
+            <div id="bola2"><img id="bola2" src="assets/imgs/bolat.png" alt=""></div>
+            <div id="div_goleiro11">
+        <img id="goleiro11" src="assets/imgs/goleiro2.png">
+        </div>
+    </div>        
+    `
+                }
+            }
+        }
+        h2Pontos.innerHTML = pontos
+
+        if(goleiro == gol){
+            resultado = "Defesa"
+        }else{
+            resultado = "Gol"
+        }
+        console.log(resultado)
+
+          console.log("usuario atual: "+ sessionStorage['usuarioLogado'])
+
+        fetch("/usuarios/chute", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            ladoBola: gol,
+            ladoGoleiro: goleiro,
+            resultado: resultado, 
+            usuario: 1
+        })
+    }).then(function (resposta) {
+        console.log("resposta: ", resposta);
+    });
+    }
+
+</script>
